@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>3.1_Successfully set reminder for text note</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>71bc9ce7-6888-4c7e-bf21-d7cbb7d29fd7</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>aa7a02b9-74a5-4676-85e3-28f6b2ce374f</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>26d850b9-6c52-4723-942e-e440d8a8d940</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'All day'</defaultValue>
+      <description></description>
+      <id>aa7a02b9-74a5-4676-85e3-28f6b2ce374f</id>
+      <masked>false</masked>
+      <name>reminderType</name>
+   </variable>
+   <variable>
+      <defaultValue>'Reminder'</defaultValue>
+      <description></description>
+      <id>26d850b9-6c52-4723-942e-e440d8a8d940</id>
+      <masked>false</masked>
+      <name>dotsOptionSelect</name>
+   </variable>
+</TestCaseEntity>

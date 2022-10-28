@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>User search for Text Note 1 and found Text Note 1 in the result</description>
+   <name>2.1_User found the word they were search for</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>95be8c30-0724-4c3c-90fd-68590bf7acf3</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>2ee90d6e-0e87-4bdd-91cc-a4d429d7f9b5</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'Text'</defaultValue>
+      <description></description>
+      <id>2ee90d6e-0e87-4bdd-91cc-a4d429d7f9b5</id>
+      <masked>false</masked>
+      <name>searchWord</name>
+   </variable>
+</TestCaseEntity>

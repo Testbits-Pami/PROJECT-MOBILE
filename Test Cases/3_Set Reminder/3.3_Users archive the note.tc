@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description>After setting the reminder, user archived the note and the reminder will be gone</description>
+   <name>3.3_Users archive the note</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>be67d53a-016c-445d-8fab-88e09accabd7</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>7effb3be-0405-4fa1-a184-6e9dcd8b2bcf</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'Archive'</defaultValue>
+      <description></description>
+      <id>7effb3be-0405-4fa1-a184-6e9dcd8b2bcf</id>
+      <masked>false</masked>
+      <name>dotsOptionSelect</name>
+   </variable>
+</TestCaseEntity>

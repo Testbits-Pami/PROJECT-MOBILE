@@ -4,4 +4,9 @@
    <name>default</name>
    <tag></tag>
    <defaultProfile>true</defaultProfile>
+   <GlobalVariableEntity>
+      <description>ColorNote App Id</description>
+      <initValue>'com.socialnmobile.dictapps.notepad.color.note'</initValue>
+      <name>appId</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>
