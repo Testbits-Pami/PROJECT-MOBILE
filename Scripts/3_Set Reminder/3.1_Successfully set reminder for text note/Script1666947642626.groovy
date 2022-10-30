@@ -35,12 +35,17 @@ Mobile.tap(findTestObject('3_Set_Reminder_Repo/Reminder Type Option List Item Se
 
 Mobile.tap(findTestObject('Object Repository/3_Set_Reminder_Repo/Set Reminder - DONE'), 0)
 
-Mobile.verifyElementExist(findTestObject('Object Repository/1_Create_Note_Repo/1.1_Text Note/Text Note Description Reminder'), 
+currentDate = CustomKeywords.'projectMobile.ProjectMobile.getCurrentDateFormatted'()
+
+Mobile.verifyElementExist(findTestObject('1_Create_Note_Repo/1.1_Text Note/Text Note Description Reminder', [('currentDate') : currentDate]), 
     0)
 
 Mobile.tap(findTestObject('0_Common_Repo/Button - Save or Back'), 0)
 
-Mobile.verifyElementExist(findTestObject('1_Create_Note_Repo/1.1_Text Note/Text Note Title Reminder'), 0)
+currentDayAndMonth = CustomKeywords.'projectMobile.ProjectMobile.getCurrentDateDayAndMonth'()
+
+Mobile.verifyElementExist(findTestObject('1_Create_Note_Repo/1.1_Text Note/Text Note Title Reminder', [('currentDayAndMonth') : currentDayAndMonth]), 
+    0)
 
 Mobile.closeApplication()
 

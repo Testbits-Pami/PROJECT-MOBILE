@@ -17,6 +17,12 @@
       <value></value>
       <variableId>b77f720e-44d6-40ce-adbf-b15083179bd5</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>b02fdce4-77a0-417c-a42e-17105add4bdb</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>'Pin to status bar'</defaultValue>
       <description></description>
@@ -30,5 +36,12 @@
       <id>b77f720e-44d6-40ce-adbf-b15083179bd5</id>
       <masked>false</masked>
       <name>dotsOptionSelect</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>b02fdce4-77a0-417c-a42e-17105add4bdb</id>
+      <masked>false</masked>
+      <name>reminderDate</name>
    </variable>
 </TestCaseEntity>

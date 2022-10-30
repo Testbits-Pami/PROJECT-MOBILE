@@ -35,8 +35,11 @@ Mobile.tap(findTestObject('3_Set_Reminder_Repo/Reminder Type Option List Item Se
 
 Mobile.tap(findTestObject('Object Repository/3_Set_Reminder_Repo/Set Reminder - DONE'), 0)
 
-Mobile.verifyElementExist(findTestObject('Object Repository/1_Create_Note_Repo/1.2_Checklist/Checklist Description with Pin Reminder'), 
+reminderDate = Mobile.getText(findTestObject('1_Create_Note_Repo/1.2_Checklist/Checklist Description with Pin Reminder'), 
     0)
+
+Mobile.verifyElementExist(findTestObject('1_Create_Note_Repo/1.2_Checklist/Checklist Description with Pin Reminder (Verify)', 
+        [('reminderDate') : reminderDate]), 0)
 
 Mobile.tap(findTestObject('0_Common_Repo/Button - Save or Back'), 0)
 

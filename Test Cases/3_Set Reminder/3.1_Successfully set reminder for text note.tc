@@ -17,6 +17,18 @@
       <value></value>
       <variableId>26d850b9-6c52-4723-942e-e440d8a8d940</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>29fde87f-7c59-48bb-ae86-13e2003367dd</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>6827687d-65e5-4914-a0df-1229a20dd244</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>'All day'</defaultValue>
       <description></description>
@@ -30,5 +42,19 @@
       <id>26d850b9-6c52-4723-942e-e440d8a8d940</id>
       <masked>false</masked>
       <name>dotsOptionSelect</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>29fde87f-7c59-48bb-ae86-13e2003367dd</id>
+      <masked>false</masked>
+      <name>currentDate</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>6827687d-65e5-4914-a0df-1229a20dd244</id>
+      <masked>false</masked>
+      <name>currentDayAndMonth</name>
    </variable>
 </TestCaseEntity>
