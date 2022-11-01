@@ -17,9 +17,6 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.startExistingApplication('com.socialnmobile.dictapps.notepad.color.note')
-
-Mobile.verifyElementText(findTestObject('Object Repository/android.widget.TextView - This is Text Note 1'), 'This is Text Note 1')
-
-Mobile.closeApplication()
+WebUI.callTestCase(findTestCase('6_Archive Note/6.1_Successfully archive a text note'), [('selectedNote') : selectedNote
+        , ('dotsOptionSelect') : dotsOptionSelect], FailureHandling.CONTINUE_ON_FAILURE)
 

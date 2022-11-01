@@ -19,24 +19,30 @@ import org.openqa.selenium.Keys as Keys
 
 Mobile.startExistingApplication(GlobalVariable.appId)
 
-Mobile.tap(findTestObject('Object Repository/0_Common_Repo/Button - Add Note or Checklist (Plus)'), 0)
+Mobile.tap(findTestObject('1_Create_Note_Repo/1.2_Checklist/Saved Checklist Item Title'), 0)
 
-Mobile.tap(findTestObject('Object Repository/0_Common_Repo/Add Text Option'), 0)
+Mobile.tap(findTestObject('0_Common_Repo/Button - Edit (Pencil Icon)'), 0)
 
-Mobile.setText(findTestObject('Object Repository/1_Create_Note_Repo/1.1_Text Note/Set Text Note Title'), 'Text Note 1', 
+Mobile.tap(findTestObject('4_Edit_the_Note_Repo/Edited Checklist', [('editedChecklist') : editedChecklist]), 0)
+
+Mobile.waitForElementPresent(findTestObject('Object Repository/4_Edit_the_Note_Repo/Popup - Edit Confirmation Title'), 0)
+
+Mobile.setText(findTestObject('Object Repository/4_Edit_the_Note_Repo/Popup - Edit Confirmation Input'), editedChecklist, 0)
+
+Mobile.tap(findTestObject('Object Repository/4_Edit_the_Note_Repo/Button - Edit Confirmation OK'), 0)
+
+Mobile.tap(findTestObject('0_Common_Repo/0.1_3Dots/Button - 3Dots'), 0)
+
+Mobile.tap(findTestObject('0_Common_Repo/0.1_3Dots/Option - 3Dots Option Select', [('dotsOptionSelect') : dotsOptionSelect]), 
     0)
 
-Mobile.setText(findTestObject('Object Repository/1_Create_Note_Repo/1.1_Text Note/Set Text Note'), 'This is Text Note 1', 
-    0)
+Mobile.waitForElementPresent(findTestObject('4_Edit_the_Note_Repo/Popup - Revert Confirmation Title'), 0)
 
-Mobile.tap(findTestObject('Object Repository/0_Common_Repo/Button - Save or Back'), 0)
+Mobile.tap(findTestObject('4_Edit_the_Note_Repo/Popup Button - Revert Confirmation OK'), 0)
 
-Mobile.verifyElementText(findTestObject('Object Repository/1_Create_Note_Repo/1.1_Text Note/Saved Text Note Description'), 
-    'This is Text Note 1')
+Mobile.verifyElementText(findTestObject('4_Edit_the_Note_Repo/Reverted Checklist', [('revertChecklist') : revertChecklist]), revertChecklist)
 
 Mobile.tap(findTestObject('0_Common_Repo/Button - Save or Back'), 0)
-
-Mobile.verifyElementExist(findTestObject('Object Repository/1_Create_Note_Repo/1.1_Text Note/Saved Text Note Title'), 0)
 
 Mobile.closeApplication()
 

@@ -1,46 +1,46 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>New Test Case</name>
+   <name>4.1_Edit the text note and revert</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>f82ab30e-5579-47a3-a077-622cc3d0e23b</testCaseGuid>
+   <testCaseGuid>3296e10b-df8b-4737-af12-86489c8a7f77</testCaseGuid>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>74b1027d-ffd4-494a-aa7c-17d54b571100</variableId>
+      <variableId>aae22820-4648-404d-8faf-8db337d0c76e</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>d6f56f72-d857-47ae-bdda-61a40c896c11</variableId>
+      <variableId>7ddbfbf8-9260-4dd8-bab9-f8015b6f7334</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId></testDataLinkId>
       <type>DEFAULT</type>
       <value></value>
-      <variableId>b9b96e8f-2e95-4131-8f30-6f04ba8c6eb9</variableId>
+      <variableId>b07b6faf-1e76-486f-a6b0-81b94c39c128</variableId>
    </variableLinks>
    <variable>
       <defaultValue>'Revert'</defaultValue>
       <description></description>
-      <id>74b1027d-ffd4-494a-aa7c-17d54b571100</id>
+      <id>aae22820-4648-404d-8faf-8db337d0c76e</id>
       <masked>false</masked>
       <name>dotsOptionSelect</name>
    </variable>
    <variable>
       <defaultValue>'This is Text'</defaultValue>
       <description></description>
-      <id>d6f56f72-d857-47ae-bdda-61a40c896c11</id>
+      <id>7ddbfbf8-9260-4dd8-bab9-f8015b6f7334</id>
       <masked>false</masked>
       <name>editedText</name>
    </variable>
    <variable>
       <defaultValue>'This is Text Note 1'</defaultValue>
       <description></description>
-      <id>b9b96e8f-2e95-4131-8f30-6f04ba8c6eb9</id>
+      <id>b07b6faf-1e76-486f-a6b0-81b94c39c128</id>
       <masked>false</masked>
       <name>revertText</name>
    </variable>

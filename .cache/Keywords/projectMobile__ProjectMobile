@@ -1,21 +1,19 @@
 {
-  "keywordFileContentHash": "2EBE0DBDACDF463BE9860C5833AFF3A8",
+  "keywordFileContentHash": "B53C7B5B057071251531F11E7C78123B",
   "keywordClasses": [
     {
       "name": "projectMobile.ProjectMobile",
       "keywordMethods": [
         {
           "name": "getCurrentDateFormatted",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         },
         {
           "name": "getCurrentDateDayAndMonth",
-          "parameters": [],
-          "javadoc": ""
+          "parameters": []
         }
       ]
     }
   ],
-  "javadocParsed": true
+  "javadocParsed": false
 }

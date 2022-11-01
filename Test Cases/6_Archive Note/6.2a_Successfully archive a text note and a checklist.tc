@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>6.2a_Successfully archive a text note and a checklist</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>f2955d01-ef2e-446e-91f3-25ef5710710a</testCaseGuid>
+   <testDataLinks>
+      <combinationType>ONE</combinationType>
+      <id>c3aeffea-5b2b-4c47-9560-79eec8459dfb</id>
+      <iterationEntity>
+         <iterationType>ALL</iterationType>
+         <value></value>
+      </iterationEntity>
+      <testDataId>Data Files/Notes to be Deleted_Archive</testDataId>
+   </testDataLinks>
+   <variableLinks>
+      <testDataLinkId>c3aeffea-5b2b-4c47-9560-79eec8459dfb</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>Name</value>
+      <variableId>5ac3e6c9-1f08-42e0-88f9-d1e448fb19c4</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>dd116f80-25bc-448e-8d82-eec17a270166</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>5ac3e6c9-1f08-42e0-88f9-d1e448fb19c4</id>
+      <masked>false</masked>
+      <name>selectedNote</name>
+   </variable>
+   <variable>
+      <defaultValue>'Archive'</defaultValue>
+      <description></description>
+      <id>dd116f80-25bc-448e-8d82-eec17a270166</id>
+      <masked>false</masked>
+      <name>dotsOptionSelect</name>
+   </variable>
+</TestCaseEntity>

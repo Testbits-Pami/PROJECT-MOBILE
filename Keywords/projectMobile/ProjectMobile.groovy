@@ -26,21 +26,20 @@ import java.time.format.DateTimeFormatter
 
 
 public class ProjectMobile {
-	
+
 	LocalDateTime currentDate = LocalDateTime.now()
-	
+
 	@Keyword
 	public getCurrentDateFormatted() {
 		DateTimeFormatter formatter = DateTimeFormatter.ofPattern('dd/MM/yyyy')
 		String formattedDate = currentDate.format(formatter)
 		return formattedDate
 	}
-	
+
 	@Keyword
 	public getCurrentDateDayAndMonth() {
-		DateTimeFormatter formatter = DateTimeFormatter.ofPattern('dd MMM')
+		DateTimeFormatter formatter = DateTimeFormatter.ofPattern('d MMM')
 		String formattedDayAndMonth = currentDate.format(formatter)
 		return formattedDayAndMonth
 	}
-	
 }

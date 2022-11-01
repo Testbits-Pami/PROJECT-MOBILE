@@ -17,26 +17,11 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.startExistingApplication(GlobalVariable.appId)
-
-Mobile.tap(findTestObject('Object Repository/0_Common_Repo/Button - Add Note or Checklist (Plus)'), 0)
-
-Mobile.tap(findTestObject('Object Repository/0_Common_Repo/Add Text Option'), 0)
-
-Mobile.setText(findTestObject('Object Repository/1_Create_Note_Repo/1.1_Text Note/Set Text Note Title'), 'Text Note 1', 
-    0)
-
-Mobile.setText(findTestObject('Object Repository/1_Create_Note_Repo/1.1_Text Note/Set Text Note'), 'This is Text Note 1', 
-    0)
-
-Mobile.tap(findTestObject('Object Repository/0_Common_Repo/Button - Save or Back'), 0)
-
-Mobile.verifyElementText(findTestObject('Object Repository/1_Create_Note_Repo/1.1_Text Note/Saved Text Note Description'), 
-    'This is Text Note 1')
-
-Mobile.tap(findTestObject('0_Common_Repo/Button - Save or Back'), 0)
-
-Mobile.verifyElementExist(findTestObject('Object Repository/1_Create_Note_Repo/1.1_Text Note/Saved Text Note Title'), 0)
-
-Mobile.closeApplication()
+if (selectedNote == 'Text Note 1') {
+    WebUI.callTestCase(findTestCase('6_Archive Note/6.1_Successfully archive a text note'), [('selectedNote') : selectedNote
+            , ('dotsOptionSelect') : dotsOptionSelect], FailureHandling.CONTINUE_ON_FAILURE)
+} else if (selectedNote == 'Checklist 1') {
+    WebUI.callTestCase(findTestCase('6_Archive Note/6.2_Successfully archive a checklist'), [('selectedNote') : selectedNote
+            , ('dotsOptionSelect') : dotsOptionSelect], FailureHandling.STOP_ON_FAILURE)
+}
 

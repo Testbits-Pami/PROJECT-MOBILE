@@ -19,24 +19,29 @@ import org.openqa.selenium.Keys as Keys
 
 Mobile.startExistingApplication(GlobalVariable.appId)
 
-Mobile.tap(findTestObject('Object Repository/0_Common_Repo/Button - Add Note or Checklist (Plus)'), 0)
+Mobile.tap(findTestObject('5_Delete_Note/Selected Note to Delete', [('selectedNote') : selectedNote]), 0)
 
-Mobile.tap(findTestObject('Object Repository/0_Common_Repo/Add Text Option'), 0)
+Mobile.tap(findTestObject('0_Common_Repo/0.1_3Dots/Button - 3Dots'), 0)
 
-Mobile.setText(findTestObject('Object Repository/1_Create_Note_Repo/1.1_Text Note/Set Text Note Title'), 'Text Note 1', 
+Mobile.tap(findTestObject('0_Common_Repo/0.1_3Dots/Option - 3Dots Option Select', [('dotsOptionSelect') : dotsOptionSelect]), 
     0)
 
-Mobile.setText(findTestObject('Object Repository/1_Create_Note_Repo/1.1_Text Note/Set Text Note'), 'This is Text Note 1', 
-    0)
+Mobile.waitForElementPresent(findTestObject('Object Repository/5_Delete_Note/Popup - Delete Confirmation Title'), 0)
 
-Mobile.tap(findTestObject('Object Repository/0_Common_Repo/Button - Save or Back'), 0)
+Mobile.tap(findTestObject('Object Repository/5_Delete_Note/Popup - Delete Confirmation OK'), 0)
 
-Mobile.verifyElementText(findTestObject('Object Repository/1_Create_Note_Repo/1.1_Text Note/Saved Text Note Description'), 
-    'This is Text Note 1')
+Mobile.tap(findTestObject('0_Common_Repo/Button - More Menu (Three Lines Icon)'), 0)
 
-Mobile.tap(findTestObject('0_Common_Repo/Button - Save or Back'), 0)
+Mobile.tap(findTestObject('Object Repository/0_Common_Repo/0.2_More_Settings/More Settings - Trash Can'), 0)
 
-Mobile.verifyElementExist(findTestObject('Object Repository/1_Create_Note_Repo/1.1_Text Note/Saved Text Note Title'), 0)
+Mobile.verifyElementText(findTestObject('5_Delete_Note/Selected Note to Delete', [('selectedNote') : selectedNote]), selectedNote)
+
+Mobile.tap(findTestObject('0_Common_Repo/0.2_More_Settings/More Settings - Back Icon Nav'), 0)
+
+Mobile.tap(findTestObject('0_Common_Repo/Button - Notes Menu Icon (Notes Icon)'), 0)
+
+Mobile.verifyElementNotExist(findTestObject('5_Delete_Note/Selected Note to Delete', [('selectedNote') : selectedNote]), 
+    3)
 
 Mobile.closeApplication()
 

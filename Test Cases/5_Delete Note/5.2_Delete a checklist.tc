@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>5.2_Delete a checklist</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>298c5857-d270-426f-8909-4e7ea1ef39c8</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>661790ec-f91a-407f-8c71-c24e847005de</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>a4f2443c-a190-4827-8c88-c9367b459d18</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'Checklist 1'</defaultValue>
+      <description></description>
+      <id>661790ec-f91a-407f-8c71-c24e847005de</id>
+      <masked>false</masked>
+      <name>selectedNote</name>
+   </variable>
+   <variable>
+      <defaultValue>'Delete'</defaultValue>
+      <description></description>
+      <id>a4f2443c-a190-4827-8c88-c9367b459d18</id>
+      <masked>false</masked>
+      <name>dotsOptionSelect</name>
+   </variable>
+</TestCaseEntity>

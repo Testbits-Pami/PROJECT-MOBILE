@@ -17,3 +17,6 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+WebUI.callTestCase(findTestCase('5_Delete Note/5.1_Delete a Text note'), [('selectedNote') : selectedNote, ('dotsOptionSelect') : dotsOptionSelect], 
+    FailureHandling.STOP_ON_FAILURE)
+

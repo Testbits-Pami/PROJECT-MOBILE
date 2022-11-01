@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>5.2a_Delete a Text Note and a Checklist</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>67843a98-ecfe-42bb-b6f6-cbbb0eea35c0</testCaseGuid>
+   <testDataLinks>
+      <combinationType>ONE</combinationType>
+      <id>f181096a-2415-4e79-a2ab-c4a8b116ea15</id>
+      <iterationEntity>
+         <iterationType>ALL</iterationType>
+         <value></value>
+      </iterationEntity>
+      <testDataId>Data Files/Notes to be Deleted_Archive</testDataId>
+   </testDataLinks>
+   <variableLinks>
+      <testDataLinkId>f181096a-2415-4e79-a2ab-c4a8b116ea15</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>Name</value>
+      <variableId>52025e67-7163-46c4-a742-3d582761d5b9</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>52025e67-7163-46c4-a742-3d582761d5b9</id>
+      <masked>false</masked>
+      <name>selectedNote</name>
+   </variable>
+</TestCaseEntity>
