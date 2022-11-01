@@ -19,27 +19,27 @@ import org.openqa.selenium.Keys as Keys
 
 Mobile.startExistingApplication(GlobalVariable.appId)
 
-Mobile.tap(findTestObject('Object Repository/0_Common_Repo/Button - Search Menu Icon (Magnify Glass Icon)'), 0)
+Mobile.tap(findTestObject('1_Create_Note_Repo/1.1_Text Note/Saved Text Note Title'), 0)
 
-if (Mobile.verifyElementExist(findTestObject('2_Search_for_Words_Repo/Clear Search Text - X'), 2, FailureHandling.OPTIONAL) == 
-true) {
-    Mobile.tap(findTestObject('2_Search_for_Words_Repo/Clear Search Text - X'), 0)
-}
+Mobile.tap(findTestObject('Object Repository/Button - Edit (Pencil Icon)'), 0)
 
-Mobile.setText(findTestObject('Object Repository/2_Search_for_Words_Repo/Set Text Search Words Input'), searchWords, 0)
+Mobile.setText(findTestObject('Edited Text Note', [('editedText') : editedText]), editedText, 0)
 
-Mobile.verifyElementExist(findTestObject('2_Search_for_Words_Repo/Search Result Text Note 1 Title - More Words', [('searchWords') : searchWords]), 
+Mobile.verifyElementText(findTestObject('Edited Text Note', [('editedText') : editedText]), editedText)
+
+Mobile.tap(findTestObject('0_Common_Repo/0.1_3Dots/Button - 3Dots'), 0)
+
+Mobile.tap(findTestObject('0_Common_Repo/0.1_3Dots/Option - 3Dots Option Select', [('dotsOptionSelect') : dotsOptionSelect]), 
     0)
 
-Mobile.tap(findTestObject('2_Search_for_Words_Repo/Search Result Text Note 1 Title - More Words', [('searchWords') : searchWords]), 
-    0)
+Mobile.waitForElementPresent(findTestObject('Object Repository/Popup - Revert Confirmation Title'), 0)
 
-Mobile.verifyElementExist(findTestObject('2_Search_for_Words_Repo/Search Result Text Note 1 Description - More Words', [
-            ('searchWords') : searchWords]), 0)
+Mobile.tap(findTestObject('Object Repository/Popup Button - Revert Confirmation OK'), 0)
+
+Mobile.verifyElementText(findTestObject('android.widget.TextView - This is Text Note 1', [('revertText') : revertText]), 
+    revertText)
 
 Mobile.tap(findTestObject('0_Common_Repo/Button - Save or Back'), 0)
-
-Mobile.tap(findTestObject('Object Repository/0_Common_Repo/Button - Notes Menu Icon (Notes Icon)'), 0)
 
 Mobile.closeApplication()
 

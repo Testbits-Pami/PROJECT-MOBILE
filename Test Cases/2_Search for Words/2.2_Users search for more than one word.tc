@@ -5,4 +5,17 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>5c70e8f3-bf5b-42ee-8832-e7c66f636d69</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>4209057b-f844-4d9c-93bd-b879f80fe444</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'Text Note'</defaultValue>
+      <description></description>
+      <id>4209057b-f844-4d9c-93bd-b879f80fe444</id>
+      <masked>false</masked>
+      <name>searchWords</name>
+   </variable>
 </TestCaseEntity>

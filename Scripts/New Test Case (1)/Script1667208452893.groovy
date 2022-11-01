@@ -17,29 +17,9 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.startExistingApplication(GlobalVariable.appId)
+Mobile.startExistingApplication('com.socialnmobile.dictapps.notepad.color.note')
 
-Mobile.tap(findTestObject('Object Repository/0_Common_Repo/Button - Search Menu Icon (Magnify Glass Icon)'), 0)
-
-if (Mobile.verifyElementExist(findTestObject('2_Search_for_Words_Repo/Clear Search Text - X'), 2, FailureHandling.OPTIONAL) == 
-true) {
-    Mobile.tap(findTestObject('2_Search_for_Words_Repo/Clear Search Text - X'), 0)
-}
-
-Mobile.setText(findTestObject('Object Repository/2_Search_for_Words_Repo/Set Text Search Words Input'), searchWords, 0)
-
-Mobile.verifyElementExist(findTestObject('2_Search_for_Words_Repo/Search Result Text Note 1 Title - More Words', [('searchWords') : searchWords]), 
-    0)
-
-Mobile.tap(findTestObject('2_Search_for_Words_Repo/Search Result Text Note 1 Title - More Words', [('searchWords') : searchWords]), 
-    0)
-
-Mobile.verifyElementExist(findTestObject('2_Search_for_Words_Repo/Search Result Text Note 1 Description - More Words', [
-            ('searchWords') : searchWords]), 0)
-
-Mobile.tap(findTestObject('0_Common_Repo/Button - Save or Back'), 0)
-
-Mobile.tap(findTestObject('Object Repository/0_Common_Repo/Button - Notes Menu Icon (Notes Icon)'), 0)
+Mobile.verifyElementText(findTestObject('Object Repository/android.widget.TextView - This is Text Note 1'), 'This is Text Note 1')
 
 Mobile.closeApplication()
 
