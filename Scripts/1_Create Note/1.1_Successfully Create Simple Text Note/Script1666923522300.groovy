@@ -23,20 +23,19 @@ Mobile.tap(findTestObject('Object Repository/0_Common_Repo/Button - Add Note or 
 
 Mobile.tap(findTestObject('Object Repository/0_Common_Repo/Add Text Option'), 0)
 
-Mobile.setText(findTestObject('Object Repository/1_Create_Note_Repo/1.1_Text Note/Set Text Note Title'), 'Text Note 1', 
-    0)
+Mobile.setText(findTestObject('Object Repository/1_Create_Note_Repo/1.1_Text Note/Set Text Note Title'), noteTitle, 0)
 
-Mobile.setText(findTestObject('Object Repository/1_Create_Note_Repo/1.1_Text Note/Set Text Note'), 'This is Text Note 1', 
-    0)
+Mobile.setText(findTestObject('Object Repository/1_Create_Note_Repo/1.1_Text Note/Set Text Note'), noteDescription, 0)
 
 Mobile.tap(findTestObject('Object Repository/0_Common_Repo/Button - Save or Back'), 0)
 
-Mobile.verifyElementText(findTestObject('Object Repository/1_Create_Note_Repo/1.1_Text Note/Saved Text Note Description'), 
-    'This is Text Note 1')
+Mobile.verifyElementText(findTestObject('1_Create_Note_Repo/1.1_Text Note/Saved Text Note Description', [('noteDescription') : noteDescription]), 
+    noteDescription)
 
 Mobile.tap(findTestObject('0_Common_Repo/Button - Save or Back'), 0)
 
-Mobile.verifyElementExist(findTestObject('Object Repository/1_Create_Note_Repo/1.1_Text Note/Saved Text Note Title'), 0)
+Mobile.verifyElementExist(findTestObject('1_Create_Note_Repo/1.1_Text Note/Saved Text Note Title', [('noteTitle') : noteTitle]), 
+    0)
 
 Mobile.closeApplication()
 

@@ -29,6 +29,12 @@
       <value></value>
       <variableId>6827687d-65e5-4914-a0df-1229a20dd244</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>72bb15cf-52a2-444f-b79b-6ed5a5bc44ae</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>'All day'</defaultValue>
       <description></description>
@@ -56,5 +62,12 @@
       <id>6827687d-65e5-4914-a0df-1229a20dd244</id>
       <masked>false</masked>
       <name>currentDayAndMonth</name>
+   </variable>
+   <variable>
+      <defaultValue>'Text Note 1'</defaultValue>
+      <description></description>
+      <id>72bb15cf-52a2-444f-b79b-6ed5a5bc44ae</id>
+      <masked>false</masked>
+      <name>noteTitle</name>
    </variable>
 </TestCaseEntity>

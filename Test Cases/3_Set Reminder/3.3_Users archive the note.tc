@@ -11,11 +11,24 @@
       <value></value>
       <variableId>7effb3be-0405-4fa1-a184-6e9dcd8b2bcf</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>3abcf7a9-f422-4086-91cf-0d74e1803ad3</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>'Archive'</defaultValue>
       <description></description>
       <id>7effb3be-0405-4fa1-a184-6e9dcd8b2bcf</id>
       <masked>false</masked>
       <name>dotsOptionSelect</name>
+   </variable>
+   <variable>
+      <defaultValue>'Text Note 1'</defaultValue>
+      <description></description>
+      <id>3abcf7a9-f422-4086-91cf-0d74e1803ad3</id>
+      <masked>false</masked>
+      <name>noteTitle</name>
    </variable>
 </TestCaseEntity>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>7.1_Restore Deleted Notes and Checklists</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>20c46da6-a013-41f8-81b6-f94d16dd67d3</testCaseGuid>
+   <testDataLinks>
+      <combinationType>ONE</combinationType>
+      <id>1bf89497-a0a0-4118-a897-1d1842e3df24</id>
+      <iterationEntity>
+         <iterationType>ALL</iterationType>
+         <value></value>
+      </iterationEntity>
+      <testDataId>Data Files/Notes to be Deleted_Archive</testDataId>
+   </testDataLinks>
+   <variableLinks>
+      <testDataLinkId>1bf89497-a0a0-4118-a897-1d1842e3df24</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>Name</value>
+      <variableId>7ffa6ce8-c0de-4e54-91de-9d93a7583cea</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>7ffa6ce8-c0de-4e54-91de-9d93a7583cea</id>
+      <masked>false</masked>
+      <name>deletedNote</name>
+   </variable>
+</TestCaseEntity>

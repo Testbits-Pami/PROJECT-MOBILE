@@ -5,4 +5,30 @@
    <tag></tag>
    <comment></comment>
    <testCaseGuid>054896cc-6991-4042-a20e-33d1efc8245e</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>99ba7071-0291-4440-b3db-0ce2d4ef6d2c</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>9077d740-21f7-400e-be0a-6381fa9f2692</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'Checklist 1'</defaultValue>
+      <description></description>
+      <id>99ba7071-0291-4440-b3db-0ce2d4ef6d2c</id>
+      <masked>false</masked>
+      <name>noteTitle</name>
+   </variable>
+   <variable>
+      <defaultValue>'This is Checklist Item 1'</defaultValue>
+      <description></description>
+      <id>9077d740-21f7-400e-be0a-6381fa9f2692</id>
+      <masked>false</masked>
+      <name>noteDescription</name>
+   </variable>
 </TestCaseEntity>

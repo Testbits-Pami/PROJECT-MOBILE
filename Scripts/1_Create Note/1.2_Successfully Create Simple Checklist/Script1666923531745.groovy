@@ -23,27 +23,26 @@ Mobile.tap(findTestObject('0_Common_Repo/Button - Add Note or Checklist (Plus)')
 
 Mobile.tap(findTestObject('0_Common_Repo/Add Checklist Option'), 0)
 
-Mobile.setText(findTestObject('1_Create_Note_Repo/1.2_Checklist/Set Checklist Title'), 'Checklist 1', 0)
+Mobile.setText(findTestObject('1_Create_Note_Repo/1.2_Checklist/Set Checklist Title'), noteTitle, 0)
 
 Mobile.tap(findTestObject('Object Repository/1_Create_Note_Repo/1.2_Checklist/Button - Add Checklist Item (Plus)'), 0)
 
 Mobile.waitForElementPresent(findTestObject('Object Repository/1_Create_Note_Repo/1.2_Checklist/Add Checklist Item Input Title'), 
     0)
 
-Mobile.setText(findTestObject('1_Create_Note_Repo/1.2_Checklist/Set Checklist Item Description'), 'This is Checklist Item 1', 
-    0)
+Mobile.setText(findTestObject('1_Create_Note_Repo/1.2_Checklist/Set Checklist Item Description'), noteDescription, 0)
 
 Mobile.tap(findTestObject('1_Create_Note_Repo/1.2_Checklist/Add Checklist Item Button (OK)'), 0)
 
 Mobile.tap(findTestObject('0_Common_Repo/Button - Save or Back'), 0)
 
-Mobile.verifyElementText(findTestObject('Object Repository/1_Create_Note_Repo/1.2_Checklist/Saved Checklist Item Description'), 
-    'This is Checklist Item 1')
+Mobile.verifyElementText(findTestObject('1_Create_Note_Repo/1.2_Checklist/Saved Checklist Item Description', [('noteDescription') : noteDescription]), 
+    noteDescription)
 
 Mobile.tap(findTestObject('0_Common_Repo/Button - Save or Back'), 0)
 
-Mobile.verifyElementText(findTestObject('Object Repository/1_Create_Note_Repo/1.2_Checklist/Saved Checklist Item Title'), 
-    'Checklist 1')
+Mobile.verifyElementExist(findTestObject('1_Create_Note_Repo/1.2_Checklist/Saved Checklist Item Title', [('noteTitle') : noteTitle]), 
+    0)
 
 Mobile.closeApplication()
 

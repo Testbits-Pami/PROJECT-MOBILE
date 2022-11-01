@@ -23,6 +23,12 @@
       <value></value>
       <variableId>b02fdce4-77a0-417c-a42e-17105add4bdb</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>0705108f-8f6f-4926-8699-9cf4e4efde82</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>'Pin to status bar'</defaultValue>
       <description></description>
@@ -43,5 +49,12 @@
       <id>b02fdce4-77a0-417c-a42e-17105add4bdb</id>
       <masked>false</masked>
       <name>reminderDate</name>
+   </variable>
+   <variable>
+      <defaultValue>'Checklist 1'</defaultValue>
+      <description></description>
+      <id>0705108f-8f6f-4926-8699-9cf4e4efde82</id>
+      <masked>false</masked>
+      <name>noteTitle</name>
    </variable>
 </TestCaseEntity>

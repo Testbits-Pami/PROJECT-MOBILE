@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>8.1_Restore Archived Notes and Checklist</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>073adc34-5da1-4e7a-b016-f42bf54e1f8b</testCaseGuid>
+   <testDataLinks>
+      <combinationType>ONE</combinationType>
+      <id>f558d6bf-5062-4677-8352-ebad705c9666</id>
+      <iterationEntity>
+         <iterationType>ALL</iterationType>
+         <value></value>
+      </iterationEntity>
+      <testDataId>Data Files/Notes to be Deleted_Archive</testDataId>
+   </testDataLinks>
+   <variableLinks>
+      <testDataLinkId>f558d6bf-5062-4677-8352-ebad705c9666</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>Name</value>
+      <variableId>976874ab-5a86-4736-b9be-bcf518fe450c</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>ef63ed88-52e1-4b9d-9492-760d8aa61ba5</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>976874ab-5a86-4736-b9be-bcf518fe450c</id>
+      <masked>false</masked>
+      <name>archivedNote</name>
+   </variable>
+   <variable>
+      <defaultValue>'Unarchive'</defaultValue>
+      <description></description>
+      <id>ef63ed88-52e1-4b9d-9492-760d8aa61ba5</id>
+      <masked>false</masked>
+      <name>dotsOptionSelect</name>
+   </variable>
+</TestCaseEntity>

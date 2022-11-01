@@ -19,11 +19,11 @@ import org.openqa.selenium.Keys as Keys
 
 Mobile.startExistingApplication(GlobalVariable.appId)
 
-Mobile.tap(findTestObject('1_Create_Note_Repo/1.1_Text Note/Saved Text Note Title'), 0)
+Mobile.tap(findTestObject('1_Create_Note_Repo/1.1_Text Note/Saved Text Note Title', [('noteTitle') : noteTitle]), 0)
 
-Mobile.tap(findTestObject('0_Common_Repo/0.1_3Dots/Button - 3Dots'), 0)
+Mobile.tap(findTestObject('0_Common_Repo/0.2_3Dots/Button - 3Dots'), 0)
 
-Mobile.tap(findTestObject('0_Common_Repo/0.1_3Dots/Option - 3Dots Option Select', [('dotsOptionSelect') : dotsOptionSelect]), 
+Mobile.tap(findTestObject('0_Common_Repo/0.2_3Dots/Option - 3Dots Option Select', [('dotsOptionSelect') : dotsOptionSelect]), 
     0)
 
 Mobile.waitForElementPresent(findTestObject('Object Repository/3_Set_Reminder_Repo/Reminder Page Title'), 0)
