@@ -19,6 +19,9 @@ import org.openqa.selenium.Keys as Keys
 
 Mobile.startExistingApplication(GlobalVariable.appId)
 
+Mobile.waitForElementPresent(findTestObject('6_Archive_Note/Selected Note to be Archived', [('selectedNote') : selectedNote]), 
+    0)
+
 Mobile.tap(findTestObject('6_Archive_Note/Selected Note to be Archived', [('selectedNote') : selectedNote]), 0)
 
 Mobile.tap(findTestObject('0_Common_Repo/0.1_3Dots/Button - 3Dots'), 0)

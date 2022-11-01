@@ -23,6 +23,12 @@
       <value></value>
       <variableId>b07b6faf-1e76-486f-a6b0-81b94c39c128</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>732916ea-677d-4103-afce-90406b90f20a</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>'Revert'</defaultValue>
       <description></description>
@@ -43,5 +49,12 @@
       <id>b07b6faf-1e76-486f-a6b0-81b94c39c128</id>
       <masked>false</masked>
       <name>revertText</name>
+   </variable>
+   <variable>
+      <defaultValue>'Text Note 1'</defaultValue>
+      <description></description>
+      <id>732916ea-677d-4103-afce-90406b90f20a</id>
+      <masked>false</masked>
+      <name>noteTitle</name>
    </variable>
 </TestCaseEntity>

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestSuiteEntity>
    <description></description>
-   <name>TS3-Set Reminder and Archive Text Note</name>
+   <name>TS1, TS4 - Create Note and Edit_Revert Note</name>
    <tag></tag>
    <isRerun>false</isRerun>
    <mailRecipient></mailRecipient>
@@ -10,92 +10,105 @@
    <pageLoadTimeoutDefault>true</pageLoadTimeoutDefault>
    <rerunFailedTestCasesOnly>false</rerunFailedTestCasesOnly>
    <rerunImmediately>true</rerunImmediately>
-   <testSuiteGuid>8ce7e4ee-a4e2-4220-997f-ac51c8d5d913</testSuiteGuid>
+   <testSuiteGuid>b2964178-15c4-4c80-8af5-67efb1c2b82a</testSuiteGuid>
    <testCaseLink>
-      <guid>b8a22aad-86fa-4773-9d02-0b9f2aa31252</guid>
+      <guid>a1bdb547-bb92-4c64-9771-8b6ff3ddbf96</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/3_Set Reminder/3.1_Successfully set reminder for text note</testCaseId>
+      <testCaseId>Test Cases/1_Create Note/1.1_Successfully Create Simple Text Note</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>aa7a02b9-74a5-4676-85e3-28f6b2ce374f</variableId>
+         <variableId>a91b4d71-b5f5-44e3-9837-6ae7115e13a6</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>26d850b9-6c52-4723-942e-e440d8a8d940</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>29fde87f-7c59-48bb-ae86-13e2003367dd</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>6827687d-65e5-4914-a0df-1229a20dd244</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>72bb15cf-52a2-444f-b79b-6ed5a5bc44ae</variableId>
+         <variableId>f20d5ab6-4d73-41f1-a3fe-880825026531</variableId>
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>6ea4ebb1-648a-4af7-99f3-ae4597ae07c9</guid>
+      <guid>2c5a6fa9-7337-4b1e-bc31-292d3ff18bd0</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/3_Set Reminder/3.2_Successfully set reminder for checklist</testCaseId>
+      <testCaseId>Test Cases/1_Create Note/1.2_Successfully Create Simple Checklist</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>fef97957-93de-4692-8360-1168c9ebea9f</variableId>
+         <variableId>99ba7071-0291-4440-b3db-0ce2d4ef6d2c</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>b77f720e-44d6-40ce-adbf-b15083179bd5</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>b02fdce4-77a0-417c-a42e-17105add4bdb</variableId>
-      </variableLink>
-      <variableLink>
-         <testDataLinkId></testDataLinkId>
-         <type>DEFAULT</type>
-         <value></value>
-         <variableId>0705108f-8f6f-4926-8699-9cf4e4efde82</variableId>
+         <variableId>9077d740-21f7-400e-be0a-6381fa9f2692</variableId>
       </variableLink>
    </testCaseLink>
    <testCaseLink>
-      <guid>a5cd941c-945c-488c-a7d9-09a17370285a</guid>
+      <guid>1e0d66c8-f7fb-4fa0-ac6e-60bc4a5f6349</guid>
       <isReuseDriver>false</isReuseDriver>
       <isRun>true</isRun>
-      <testCaseId>Test Cases/3_Set Reminder/3.3_Users archive the note</testCaseId>
+      <testCaseId>Test Cases/4_Edit the Note/4.1_Edit the text note and revert</testCaseId>
       <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>7effb3be-0405-4fa1-a184-6e9dcd8b2bcf</variableId>
+         <variableId>aae22820-4648-404d-8faf-8db337d0c76e</variableId>
       </variableLink>
       <variableLink>
          <testDataLinkId></testDataLinkId>
          <type>DEFAULT</type>
          <value></value>
-         <variableId>3abcf7a9-f422-4086-91cf-0d74e1803ad3</variableId>
+         <variableId>7ddbfbf8-9260-4dd8-bab9-f8015b6f7334</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>b07b6faf-1e76-486f-a6b0-81b94c39c128</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>732916ea-677d-4103-afce-90406b90f20a</variableId>
+      </variableLink>
+   </testCaseLink>
+   <testCaseLink>
+      <guid>2adee266-d23d-4e07-84dc-f44e3042a41c</guid>
+      <isReuseDriver>false</isReuseDriver>
+      <isRun>true</isRun>
+      <testCaseId>Test Cases/4_Edit the Note/4.2_Edit the checklist and revert</testCaseId>
+      <usingDataBindingAtTestSuiteLevel>true</usingDataBindingAtTestSuiteLevel>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>e4a3fc9d-4d9a-4aec-9bc1-cfc87384d6ae</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>1122acb5-9602-4003-b05c-4951e169f38c</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>0df6c58e-f320-4669-8ea8-98670e5075e6</variableId>
+      </variableLink>
+      <variableLink>
+         <testDataLinkId></testDataLinkId>
+         <type>DEFAULT</type>
+         <value></value>
+         <variableId>8d205744-174a-46ea-9a93-752fc52cf7b7</variableId>
       </variableLink>
    </testCaseLink>
 </TestSuiteEntity>

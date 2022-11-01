@@ -19,26 +19,31 @@ import org.openqa.selenium.Keys as Keys
 
 Mobile.startExistingApplication(GlobalVariable.appId)
 
+Mobile.waitForElementPresent(findTestObject('0_Common_Repo/Button - More Menu (Three Lines Icon)'), 3)
+
 Mobile.tap(findTestObject('0_Common_Repo/Button - More Menu (Three Lines Icon)'), 0)
 
 Mobile.tap(findTestObject('0_Common_Repo/0.2_More_Settings/More Settings - Archive'), 0)
 
-if (Mobile.verifyElementExist(findTestObject('8_Restore_Archived_Notes_and_Checklist_Repo/Select Archived Note', [('archivedNote') : archivedNote]), 2, FailureHandling.OPTIONAL) == 
-true) {
-    Mobile.tap(findTestObject('8_Restore_Archived_Notes_and_Checklist_Repo/Select Archived Note', [('archivedNote') : archivedNote]), 0)
+if (Mobile.verifyElementExist(findTestObject('8_Restore_Archived_Notes_and_Checklist_Repo/Select Archived Note', [('archivedNote') : archivedNote]), 
+    2, FailureHandling.OPTIONAL) == true) {
+    Mobile.tap(findTestObject('8_Restore_Archived_Notes_and_Checklist_Repo/Select Archived Note', [('archivedNote') : archivedNote]), 
+        0)
 
     Mobile.tap(findTestObject('0_Common_Repo/0.1_3Dots/Button - 3Dots'), 0)
 
     Mobile.tap(findTestObject('0_Common_Repo/0.1_3Dots/Option - 3Dots Option Select', [('dotsOptionSelect') : dotsOptionSelect]), 
         0)
 
-    Mobile.verifyElementNotExist(findTestObject('8_Restore_Archived_Notes_and_Checklist_Repo/Select Archived Note', [('archivedNote') : archivedNote]), 2)
+    Mobile.verifyElementNotExist(findTestObject('8_Restore_Archived_Notes_and_Checklist_Repo/Select Archived Note', [('archivedNote') : archivedNote]), 
+        2)
 
     Mobile.tap(findTestObject('0_Common_Repo/0.2_More_Settings/More Settings - Back Icon Nav'), 0)
 
     Mobile.tap(findTestObject('0_Common_Repo/Button - Notes Menu Icon (Notes Icon)'), 0)
 
-    Mobile.verifyElementExist(findTestObject('8_Restore_Archived_Notes_and_Checklist_Repo/Select Archived Note', [('archivedNote') : archivedNote]), 2)
+    Mobile.verifyElementExist(findTestObject('8_Restore_Archived_Notes_and_Checklist_Repo/Select Archived Note', [('archivedNote') : archivedNote]), 
+        2)
 } else {
     Mobile.tap(findTestObject('0_Common_Repo/0.2_More_Settings/More Settings - Back Icon Nav'), 0)
 

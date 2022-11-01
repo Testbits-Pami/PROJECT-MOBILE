@@ -19,19 +19,19 @@ import org.openqa.selenium.Keys as Keys
 
 Mobile.startExistingApplication(GlobalVariable.appId)
 
-Mobile.tap(findTestObject('1_Create_Note_Repo/1.1_Text Note/Saved Text Note Title', [('noteTitle') : noteTitle]), 0)
+Mobile.tap(findTestObject('0_Common_Repo/Button - More Menu (Three Lines Icon)'), 0)
 
-Mobile.tap(findTestObject('0_Common_Repo/0.1_3Dots/Button - 3Dots'), 0)
+Mobile.tap(findTestObject('0_Common_Repo/0.2_More_Settings/More Settings - Trash Can'), 0)
 
-Mobile.tap(findTestObject('0_Common_Repo/0.1_3Dots/Option - 3Dots Option Select', [('dotsOptionSelect') : dotsOptionSelect]), 
-    0)
+Mobile.tap(findTestObject('Object Repository/9_Delete_All_Trash_Repo/Button - Delete All Trash'), 0)
 
-Mobile.waitForElementPresent(findTestObject('Object Repository/3_Set_Reminder_Repo/Popup - Archive Confirmation Msg'), 0)
+Mobile.waitForElementPresent(findTestObject('9_Delete_All_Trash_Repo/Popup - Delete Trash Confirmation Title'), 0)
 
-Mobile.tap(findTestObject('Object Repository/3_Set_Reminder_Repo/Popup Button - Confirmed Archive OK'), 0)
+Mobile.tap(findTestObject('Object Repository/9_Delete_All_Trash_Repo/Popup - Delete Trash Confirmation OK'), 0)
 
-Mobile.verifyElementNotExist(findTestObject('1_Create_Note_Repo/1.1_Text Note/Saved Text Note Title', [('noteTitle') : noteTitle]), 
-    3)
+Mobile.tap(findTestObject('0_Common_Repo/0.2_More_Settings/More Settings - Back Icon Nav'), 0)
+
+Mobile.tap(findTestObject('0_Common_Repo/Button - Notes Menu Icon (Notes Icon)'), 0)
 
 Mobile.closeApplication()
 

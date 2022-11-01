@@ -19,7 +19,10 @@ import org.openqa.selenium.Keys as Keys
 
 Mobile.startExistingApplication(GlobalVariable.appId)
 
-Mobile.tap(findTestObject('1_Create_Note_Repo/1.1_Text Note/Saved Text Note Title'), 0)
+Mobile.waitForElementPresent(findTestObject('1_Create_Note_Repo/1.1_Text Note/Saved Text Note Title', [('noteTitle') : noteTitle]), 
+    3)
+
+Mobile.tap(findTestObject('1_Create_Note_Repo/1.1_Text Note/Saved Text Note Title', [('noteTitle') : noteTitle]), 0)
 
 Mobile.tap(findTestObject('Object Repository/0_Common_Repo/Button - Edit (Pencil Icon)'), 0)
 
@@ -32,12 +35,12 @@ Mobile.tap(findTestObject('0_Common_Repo/0.1_3Dots/Button - 3Dots'), 0)
 Mobile.tap(findTestObject('0_Common_Repo/0.1_3Dots/Option - 3Dots Option Select', [('dotsOptionSelect') : dotsOptionSelect]), 
     0)
 
-Mobile.waitForElementPresent(findTestObject('Object Repository/4_Edit_the_Note_Repo/Popup - Revert Confirmation Title'), 0)
+Mobile.waitForElementPresent(findTestObject('Object Repository/4_Edit_the_Note_Repo/Popup - Revert Confirmation Title'), 
+    0)
 
 Mobile.tap(findTestObject('Object Repository/4_Edit_the_Note_Repo/Popup Button - Revert Confirmation OK'), 0)
 
-Mobile.verifyElementText(findTestObject('4_Edit_the_Note_Repo/Reverted Text Note', [('revertText') : revertText]), 
-    revertText)
+Mobile.verifyElementText(findTestObject('4_Edit_the_Note_Repo/Reverted Text Note', [('revertText') : revertText]), revertText)
 
 Mobile.tap(findTestObject('0_Common_Repo/Button - Save or Back'), 0)
 

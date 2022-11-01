@@ -19,7 +19,7 @@ import org.openqa.selenium.Keys as Keys
 
 Mobile.startExistingApplication(GlobalVariable.appId)
 
-Mobile.tap(findTestObject('1_Create_Note_Repo/1.2_Checklist/Saved Checklist Item Title'), 0)
+Mobile.tap(findTestObject('1_Create_Note_Repo/1.2_Checklist/Saved Checklist Item Title', [('noteTitle') : noteTitle]), 0)
 
 Mobile.tap(findTestObject('0_Common_Repo/Button - Edit (Pencil Icon)'), 0)
 
@@ -27,7 +27,8 @@ Mobile.tap(findTestObject('4_Edit_the_Note_Repo/Edited Checklist', [('editedChec
 
 Mobile.waitForElementPresent(findTestObject('Object Repository/4_Edit_the_Note_Repo/Popup - Edit Confirmation Title'), 0)
 
-Mobile.setText(findTestObject('Object Repository/4_Edit_the_Note_Repo/Popup - Edit Confirmation Input'), editedChecklist, 0)
+Mobile.setText(findTestObject('Object Repository/4_Edit_the_Note_Repo/Popup - Edit Confirmation Input'), editedChecklist, 
+    0)
 
 Mobile.tap(findTestObject('Object Repository/4_Edit_the_Note_Repo/Button - Edit Confirmation OK'), 0)
 
@@ -40,7 +41,8 @@ Mobile.waitForElementPresent(findTestObject('4_Edit_the_Note_Repo/Popup - Revert
 
 Mobile.tap(findTestObject('4_Edit_the_Note_Repo/Popup Button - Revert Confirmation OK'), 0)
 
-Mobile.verifyElementText(findTestObject('4_Edit_the_Note_Repo/Reverted Checklist', [('revertChecklist') : revertChecklist]), revertChecklist)
+Mobile.verifyElementText(findTestObject('4_Edit_the_Note_Repo/Reverted Checklist', [('revertChecklist') : revertChecklist]), 
+    revertChecklist)
 
 Mobile.tap(findTestObject('0_Common_Repo/Button - Save or Back'), 0)
 

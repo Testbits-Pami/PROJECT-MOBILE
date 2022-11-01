@@ -23,6 +23,12 @@
       <value></value>
       <variableId>0df6c58e-f320-4669-8ea8-98670e5075e6</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>8d205744-174a-46ea-9a93-752fc52cf7b7</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>'Revert'</defaultValue>
       <description></description>
@@ -43,5 +49,12 @@
       <id>0df6c58e-f320-4669-8ea8-98670e5075e6</id>
       <masked>false</masked>
       <name>revertChecklist</name>
+   </variable>
+   <variable>
+      <defaultValue>'Checklist 1'</defaultValue>
+      <description></description>
+      <id>8d205744-174a-46ea-9a93-752fc52cf7b7</id>
+      <masked>false</masked>
+      <name>noteTitle</name>
    </variable>
 </TestCaseEntity>

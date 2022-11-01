@@ -21,30 +21,28 @@ Mobile.startExistingApplication(GlobalVariable.appId)
 
 Mobile.tap(findTestObject('0_Common_Repo/Button - More Menu (Three Lines Icon)'), 0)
 
-Mobile.tap(findTestObject('0_Common_Repo/0.3_More_Settings/More Settings - Trash Can'), 0)
+Mobile.tap(findTestObject('0_Common_Repo/0.2_More_Settings/More Settings - Trash Can'), 0)
 
-if (Mobile.verifyElementExist(findTestObject('7_Restore_deleted_Notes_Repo/Select Deleted Note'), 2, FailureHandling.OPTIONAL) == 
-true) {
+if (Mobile.verifyElementExist(findTestObject('7_Restore_deleted_Notes_Repo/Select Deleted Note', [('deletedNote') : deletedNote]), 
+    2, FailureHandling.OPTIONAL) == true) {
     Mobile.tap(findTestObject('7_Restore_deleted_Notes_Repo/Select Deleted Note', [('deletedNote') : deletedNote]), 0)
 
     Mobile.tap(findTestObject('Object Repository/0_Common_Repo/Button - Restore (Reverse Icon)'), 0)
 
-    Mobile.waitForElementPresent(findTestObject('Object Repository/0_Common_Repo/0.1_Restore_deleted_Notes_Repo/Popup - Confirmation Restore Title'), 
-        0)
+    Mobile.waitForElementPresent(findTestObject('7_Restore_deleted_Notes_Repo/Popup - Confirmation Restore Title'), 0)
 
-    Mobile.tap(findTestObject('Object Repository/0_Common_Repo/0.1_Restore_deleted_Notes_Repo/Popup - Confirmation Restore OK'), 
-        0)
+    Mobile.tap(findTestObject('7_Restore_deleted_Notes_Repo/Popup - Confirmation Restore OK'), 0)
 
     Mobile.tap(findTestObject('0_Common_Repo/Button - Save or Back'), 0)
 
-    Mobile.tap(findTestObject('0_Common_Repo/0.3_More_Settings/More Settings - Back Icon Nav'), 0)
+    Mobile.tap(findTestObject('0_Common_Repo/0.2_More_Settings/More Settings - Back Icon Nav'), 0)
 
     Mobile.tap(findTestObject('0_Common_Repo/Button - Notes Menu Icon (Notes Icon)'), 0)
 
     Mobile.verifyElementText(findTestObject('7_Restore_deleted_Notes_Repo/Select Deleted Note', [('deletedNote') : deletedNote]), 
         deletedNote)
 } else {
-    Mobile.tap(findTestObject('0_Common_Repo/0.3_More_Settings/More Settings - Back Icon Nav'), 0)
+    Mobile.tap(findTestObject('0_Common_Repo/0.2_More_Settings/More Settings - Back Icon Nav'), 0)
 
     Mobile.tap(findTestObject('0_Common_Repo/Button - Notes Menu Icon (Notes Icon)'), 0)
 }
