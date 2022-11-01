@@ -19,6 +19,10 @@ import org.openqa.selenium.Keys as Keys
 
 Mobile.startExistingApplication(GlobalVariable.appId)
 
+Mobile.delay(3, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.waitForElementPresent(findTestObject('0_Common_Repo/Button - More Menu (Three Lines Icon)'), 3)
+
 Mobile.tap(findTestObject('0_Common_Repo/Button - More Menu (Three Lines Icon)'), 0)
 
 Mobile.tap(findTestObject('0_Common_Repo/0.2_More_Settings/More Settings - Trash Can'), 0)

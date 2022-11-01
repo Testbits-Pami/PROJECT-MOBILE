@@ -17,7 +17,7 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.startExistingApplication(GlobalVariable.appId)
+Mobile.startExistingApplication(GlobalVariable.appId, FailureHandling.STOP_ON_FAILURE)
 
 Mobile.waitForElementPresent(findTestObject('1_Create_Note_Repo/1.1_Text Note/Saved Text Note Title', [('noteTitle') : noteTitle]), 
     3)

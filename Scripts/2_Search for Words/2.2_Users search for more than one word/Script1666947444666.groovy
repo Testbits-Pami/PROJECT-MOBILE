@@ -19,6 +19,8 @@ import org.openqa.selenium.Keys as Keys
 
 Mobile.startExistingApplication(GlobalVariable.appId)
 
+Mobile.waitForElementPresent(findTestObject('0_Common_Repo/Button - Search Menu Icon (Magnify Glass Icon)'), 0)
+
 Mobile.tap(findTestObject('Object Repository/0_Common_Repo/Button - Search Menu Icon (Magnify Glass Icon)'), 0)
 
 if (Mobile.verifyElementExist(findTestObject('2_Search_for_Words_Repo/Clear Search Text - X'), 2, FailureHandling.OPTIONAL) == 

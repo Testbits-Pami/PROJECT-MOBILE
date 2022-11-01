@@ -17,7 +17,9 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
-Mobile.startExistingApplication(GlobalVariable.appId)
+Mobile.startExistingApplication(GlobalVariable.appId, FailureHandling.STOP_ON_FAILURE)
+
+Mobile.waitForElementPresent(findTestObject('0_Common_Repo/Button - Add Note or Checklist (Plus)'), 3)
 
 Mobile.tap(findTestObject('Object Repository/0_Common_Repo/Button - Add Note or Checklist (Plus)'), 0)
 
